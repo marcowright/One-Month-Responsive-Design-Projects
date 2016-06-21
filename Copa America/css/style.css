@@ -1,0 +1,121 @@
+/*
+ * General Styles
+*/
+
+
+body {
+  /*background: url("../images/copa background.png");*/
+  font-family: 'Helvetica', arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+  
+}
+
+address, p {
+  color: #2b90d9 ;
+}
+
+a {
+  color: #3E4348;
+}
+
+
+/*
+ * Heading Styles
+*/
+
+
+h1, h2 {
+  font-family: 'Space Mono', monospace;
+  color: #2b90d9;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+h1 {
+
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+
+/*
+ * Container Styles
+*/
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * Section Styles
+*/
+
+/* .intro, .contact, .map {
+  width: 30rem;
+} 
+*/
+
+.contact {
+  background: #d9e1e8;
+}
+
+.intro, .contact {
+  padding: 0 2.5rem;
+}
+
+.contact {
+  text-align: center;
+}
+
+
+/*
+ * Hero Styles
+*/
+
+
+.hero {
+  line-height: 0;
+}
+
+.hero img {
+ width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
