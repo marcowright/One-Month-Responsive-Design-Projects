@@ -4,14 +4,15 @@
 
 
 body {
-  /*background: url("../images/copa background.png");*/
-  font-family: 'Helvetica', arial, sans-serif;
+  /*background: url("../images/copa background.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+  font-family: 'Space Mono', monospace, sans-serif;
+
 }
 
-* {
+ {
   -moz-box-sizing: border-box; /* Firexfox */
   -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
   box-sizing: border-box; /* IE */
@@ -25,6 +26,7 @@ body {
 
 p {
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.75;
   margin-bottom: 1.75rem;
   
@@ -48,17 +50,18 @@ h1, h2 {
   font-family: 'Space Mono', monospace;
   color: #2b90d9;
   text-align: center;
+  letter-spacing: 0.125em;
   margin-bottom: 2rem;
   padding-top: 2rem;
 }
 
 h1 {
 
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 
@@ -72,6 +75,10 @@ h2 {
   padding: 0;
 }
 
+.text-container {
+  max-width: 713px;
+}
+
 
 /*
  * Section Styles
@@ -82,6 +89,11 @@ h2 {
 } 
 */
 
+
+/* .container section:nth-child(even) {
+  background: #d9e1e8;
+} 
+*/
 .contact {
   background: #d9e1e8;
 }
@@ -107,6 +119,22 @@ h2 {
 .hero img {
  width: 100%;
 }
+
+
+/*
+ * Images Styles
+*/
+
+
+.intro-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact img {
+  width: 100%;
+}
+
 
 
 
