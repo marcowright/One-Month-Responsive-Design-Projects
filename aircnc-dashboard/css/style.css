@@ -1,0 +1,381 @@
+/*
+ * General Styles
+ */
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+  color: rgb(86, 90, 92);
+  background: rgb(245, 245, 245);
+}
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 0 12.5px; /*Pixel value to make calcs easier later*/
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 90, 95);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Hidden on mobile
+ */
+
+.announcement, nav.large ul, .message-text .subject{
+  display: none;
+}
+
+/*
+ * Header and Nav
+ */
+
+header {
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(220, 224, 224);
+  padding: 0 0.8rem 0 0;
+}
+
+.hamburger {
+  float: right;
+  font-size: 2.5rem;
+  padding: 0 .45rem;
+}
+
+.hamburger a {
+  text-decoration: none;
+  color: rgb(255, 90, 95)
+}
+
+.logo {
+  float: left;
+  display: block;
+  border-right: 1px solid rgb(220, 224, 224);
+}
+
+
+/*
+ * Nav (small)
+*/
+
+nav.small {
+ background: blue;
+}
+
+nav.small ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+nav.small li {
+ margin: 0;
+ background: rgb(43, 45, 46);
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+nav.small li, footer {
+ border-top: 1px solid rgb(180, 180, 180);
+}
+
+nav.small a {
+ padding: 1rem 0;
+ display: block;
+ color: white;
+ text-decoration: none;
+}
+
+nav.small a:active {
+ background: rgb(40, 40, 40);
+}
+
+/*
+ * Profile
+*/
+
+.profile {
+  border: 1px solid rgb(220, 224, 224);
+}
+
+.profile {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.profile img {
+  display: block;
+  width: 100%;
+}
+
+.profile .details {
+  padding: .8rem 0.5rem;
+  text-align: center;
+}
+
+.profile h2 {
+  font-size: 2rem;
+  margin: 0 0 .1rem 0;
+  color: rgb(88, 88, 88);
+}
+
+.profile .member-since {
+  font-size: .9rem;
+  margin: 0 0 0.6rem;
+}
+
+/*
+ * Panel
+*/
+
+.panel {
+  border: 1px solid rgb(220, 224, 224);
+  margin-bottom: 1.6rem;
+}
+
+.panel h3 {
+  background: rgb(237, 239, 237);
+  padding: .4rem;
+  font-size: .9rem;
+  border-bottom: 1px solid rgb(220, 224, 224);
+}
+
+.panel h3, .panel-content {
+  padding: .6rem 1.25rem;
+}
+
+/*
+ * Notifications
+*/
+
+.notification {
+  margin-bottom: 0.6rem;
+  padding: 0.4rem;
+  font-size: .85rem;
+}
+
+/*
+ * Notification, Message Join Styles
+*/
+
+.notification, .message {
+  border-bottom: 1px solid rgba(220,224,224,0.5);
+}
+
+.notification:last-of-type, .message:last-of-type {
+  border-bottom-width: 0;
+}
+
+/*
+ * Messages
+*/
+
+.message {
+  padding: 1.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.message .photo {
+  margin-bottom: 1.5rem;
+}
+
+.message .photo img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.message .details {
+  margin-bottom: 1.5rem;
+}
+
+.message .details p {
+  margin-bottom: .1rem;
+}
+
+.message .message-text p.body {
+  color: rgb(130, 136, 138);
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.accepted {
+  color: rgb(63, 179, 79);
+}
+
+.status.declined {
+  color: rgb(0, 122, 135);
+}
+
+
+/*
+ * Footer
+*/
+
+footer {
+  background: rgb(43, 45, 46);
+  text-align: center;
+  font-size: .6rem;
+  padding: .5rem;
+  border-top: 1px solid rgb(220, 224, 224);
+}
+
+
+
+/*
+ * Media Queries styles
+*/
+
+
+@media only screen and (min-width: 768px) {
+
+.announcement, .message-text .subject{
+  display: block;
+}
+
+.hamburger, .small {
+  display: none;
+}
+
+ nav.large ul {
+  display: inline-block;
+  float: right;
+ }
+
+ nav.large li {
+  list-style: none;
+  display: inline-block;
+  padding: 1.4rem .6rem;
+  margin-right: 1.5rem;
+  border-left: 1px solid rgb(220, 224, 224);
+  font-weight: bold;
+ 
+ }
+
+ nav.large ul li a {
+  color: #565A5C;
+
+ }
+
+ .container {
+  width: 720px; 
+  margin: 0 auto;
+ }
+
+ .announcement {
+  background: #C2E4E7;
+  padding: 1.4rem 2rem;
+  margin-top: 1.4rem;
+ }
+
+ .announcement .imagery {
+  margin-right: 1rem;
+ }
+
+ .imagery, .info {
+  float: left;
+ }
+
+ .info h3 {
+  font-weight: bold;
+  margin-bottom: .3rem;
+ }
+
+ .info p {
+  font-size: .9rem;
+ }
+
+ .profile .member-since {
+  font-size: .8rem;
+}
+
+
+ .column, .message .component, .message .photo, .message .details  {
+  float: left;
+ }
+
+ .column.profile {
+  width: 195px;
+  margin-right: 25px;
+
+ }
+
+ .profile img {
+  width: 100%
+  margin: 0 auto;
+ }
+
+ .column.updates {
+  width: 500px;
+  margin-top: 1.5rem;
+ }
+
+ .message .sender {
+  width: 140px;
+  margin-right: 10px;
+ }
+
+ .message .photo {
+  margin-right: 10px;
+ }
+
+ .message-text {
+  width: 220px;
+  margin-right: 5px;
+ }
+
+ .message-text .subject {
+  font-weight: bold;
+ }
+
+ .booking-details {
+  width: 80px;
+ }
+
+
+}
+
+@media only print {
+
+
+  html {
+    color: rgb(86, 90, 92);
+  }
+
+  header, nav {
+    display: none;
+  }
+
+  a {
+    color: rgb(86, 90, 92);
+    text-decoration: underline;
+  }
+
+  .profile photo {
+    display: none;
+  }
+  
+}
+
+
